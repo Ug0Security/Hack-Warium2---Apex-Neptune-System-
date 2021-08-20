@@ -1,3 +1,5 @@
+shodan : html:"apex"  html:"neptune"
+
  ** Admin Password Leak **
 
 Go to IP/NETSETUP.ASP Check the response / DOM the admin password is inside :)
