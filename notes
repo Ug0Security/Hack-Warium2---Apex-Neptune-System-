@@ -4,7 +4,9 @@ default password  admin:1234
  ** Admin Password Leak **
 
 Go to IP:PORT/NETSETUP.ASP or IP:PORT/NETSETUP.SHT Check the response / DOM the admin password is inside :)
-You may be able to TELNET into it if its exposed.. but as said in the manual 
+You may be able to TELNET into it if its exposed (some commands here :https://github.com/Stonyx/AquaBusLib/blob/master/docs/ApexDebug.md)
+
+as said in the manual 
 
 "Configure your Apex for external Internet access. Do this up front and Neptune support can
 frequently telnet directly into your controller to help support you."
@@ -22,8 +24,10 @@ Connection: close
 file content
 ---
 
-funny fact  : some seems to have been spread by https://www.zscaler.com/blogs/security-research/recent-bulehero-botnet-payload but they've upload JSP webshell that won't execute :*)
-you can see the FxCodeShell.jsp shell in the webfolder
+funny fact  : some guys seems to have been spread this --> https://www.zscaler.com/blogs/security-research/recent-bulehero-botnet-payload 
+but they've upload a JSP webshell that won't execute :*)
+
+you may see the FxCodeShell.jsp shell in the webfolder
 
 ** WEB FILE READ **
 
