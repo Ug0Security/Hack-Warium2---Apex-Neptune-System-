@@ -5,3 +5,6 @@ You may be able to TELNET into it if its exposed.. but as said in the manual
 
 "Configure your Apex for external Internet access. Do this up front and Neptune support can
 frequently telnet directly into your controller to help support you."
+
+
+curl http://IP:PORT/NETSETUP.ASP | grep input | grep admin
