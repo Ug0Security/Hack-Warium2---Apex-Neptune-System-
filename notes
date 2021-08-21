@@ -1,7 +1,7 @@
 shodan : html:"apex"  html:"neptune"
 default password  admin:1234
 
- ** Admin Password Leak **
+ ** Admin User:Password Leak **
 
 Go to IP:PORT/NETSETUP.ASP or IP:PORT/NETSETUP.SHT Check the response / DOM the admin password is inside :)
 You may be able to TELNET into it if its exposed (some commands here :https://github.com/Stonyx/AquaBusLib/blob/master/docs/ApexDebug.md)
